@@ -1,0 +1,245 @@
+// Practica #1-Karime Carpio.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
+//
+
+/* #include <iostream>
+using namespace std;
+
+bool EsNumeroPerfecto(int numero)
+{
+    int suma = 0;
+    for (int i = 1; i <= numero / 2; i++)
+    {
+        if (numero % i == 0)
+        {
+            suma = i + 1;
+        }
+   }
+    return suma == numero;
+}
+
+int SumarElementos(int vec[],int tam)
+{
+    int suma=0;
+    for (int i = 0; i < tam; i++)
+    {
+        suma = vec[i] + suma;
+    }
+    return suma;
+}
+
+float PromedioElementos(int arr[], int tam)
+{
+    int Prom=0;
+    for (int i = 0; i < tam; i++)
+    {
+        Prom = arr[i]+Prom;
+
+    }
+    return Prom/tam;
+}
+
+void InvertirVectorNumeros(int vec[], int tam, int vecEnterosInvert[])
+{
+    for (int i = 0; i < tam; i++)
+    {
+        vecEnterosInvert[i] = vec[tam - 1 - i];
+    }
+}
+
+int BuscarElemento(int vec[], int tam, int e)
+{
+    for (int i = 0; i < tam; i++)
+    {
+        if (vec[i] == e)
+        {
+            return i;
+        }
+    }
+    return -1;
+}
+
+int BuscarElementoMenor(int vec[], int tam)
+{
+    int emenor=vec[0];
+    for (int i = 0; i < tam; i++)
+    {
+        if (vec[i] < emenor)
+        {
+            emenor = vec[i];
+        }
+    }
+    return emenor;
+}
+
+void Secuencia1(int n)
+{
+    for (int f = 0; f <= n; f++)
+    {
+        int cont = f;
+        for (int c = 0; c <= n; c++)
+        {
+            cout << cont;
+            cont++;
+        }
+        cout << endl;
+    }   
+}
+
+void Secuencia2(int num)
+{
+    int cont = 0;
+
+    for (int f = 1; f <= num; f++)
+    {
+        for (int c= 1; c <= num; c++)
+        {
+            if (f% 2 != 0)
+            {
+                cont++;
+            }
+            else
+            {
+                cont--;
+            }
+            cout << cont << "\t";
+        }
+        cout << endl;
+        cont = cont + num;
+        if (f % 2 != 0)
+        {
+            cont++;
+        }
+        else
+        {
+            cont--;
+        }
+    }
+}
+
+void Secuencia5(int num)
+{
+    int cont;
+    for (int f= 1; f <= num; f++)
+    {
+        cont = f - 1;
+        for (int c = 1; c <= num; c++)
+        {
+            if (f != 1 && c != 1 && c <= f)
+            {
+                cont--;
+            }
+            else
+            {
+                cont++;
+            }
+            cout << cont << " ";
+        }
+        cout << endl;
+    }
+}
+
+void Secuencia6(int num)
+{
+    int cont;
+
+    for (int f= 1; f <= num; f++)
+    {
+        if (f <= (num / 2) + 1)
+        {
+            cont = f - 1;
+        }
+        else
+        {
+            cont = (num - f) + 2;
+        }
+        for (int c = 1; c <= num; c++)
+        {
+            if (f != 1 && f <= (num / 2) + 1 && c != 1 && c <= f)
+            {
+                cont--;
+            }
+            else
+            {
+                if (f<= (num / 2) + 1)
+                {
+                    cont++;
+                }
+                else
+                {
+                    if (c <= (num - f) + 1)
+                    {
+                        cont--;
+                    }
+                    else
+                    {
+                        cont++;
+                    }
+                }
+            }
+            cout << cont << "\t";
+        }
+        cout << endl;
+    }
+}
+
+int main()
+{
+    int n;
+    int vec[5] = { 9,8,7,6,5 };
+    int tam=5;
+    int vecInvert[5];
+
+    cout << "ingrese un numero: " << endl;
+    cin >> n;
+    if (EsNumeroPerfecto(n))
+    {
+        cout << "Es numero perfecto " << endl;
+    }
+    else
+    {
+        cout << "No es numero perfecto " << endl;
+    }
+
+    cout << "Suma de elementos en un vector" << endl;
+    int suma = SumarElementos(vec, tam);
+    cout << "La suma de los elementos es: " << suma << endl;
+
+    cout << "Promedio de los Elementos " << endl;
+    float prom = PromedioElementos(vec, tam);
+    cout << "El promedio de los elementos es: " << prom << endl;
+
+    cout << "Vector Invertido" << endl;
+    InvertirVectorNumeros(vec, tam, vecInvert);
+    for (int i = 0; i < tam; i++)
+    {
+        cout << vecInvert[i] << " ";
+    }
+    cout << endl;
+   
+    cout << "Buscar elemento de un vector" << endl;
+    int ele = 8;
+    int pos = BuscarElemento(vec, tam, ele);
+    if (pos!=-1)
+    {
+        cout << "Elemento encontrado " << endl;
+    }
+    else
+    {
+        cout << "Elemento no encontrado " << endl;
+    }
+
+    cout << "Buscar elemento menor" << endl;
+    int Emenor = BuscarElementoMenor(vec, tam);
+    cout << "El elemento menor es: " << Emenor << endl;
+
+    cout << "Mostrar Secuencias: " << endl;
+    int num;
+    cout << "Ingrese un numero: ";
+    cin >> num;
+    Secuencia1(num);
+    Secuencia2(num);
+    Secuencia5(num);
+    Secuencia6(num);
+//funciones
+}
+*/

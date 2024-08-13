@@ -184,7 +184,7 @@ void Secuencia6(int num)
 
 int main()
 {
-    int n;
+    int N;
     int vec[5] = { 9,8,7,6,5 };
     int tam=5;
     int vecInvert[5];

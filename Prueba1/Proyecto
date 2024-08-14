@@ -116,71 +116,9 @@ void Secuencia2(int num)
     }
 }
 
-void Secuencia5(int num)
-{
-    int cont;
-    for (int f= 1; f <= num; f++)
-    {
-        cont = f - 1;
-        for (int c = 1; c <= num; c++)
-        {
-            if (f != 1 && c != 1 && c <= f)
-            {
-                cont--;
-            }
-            else
-            {
-                cont++;
-            }
-            cout << cont << " ";
-        }
-        cout << endl;
-    }
-}
 
-void Secuencia6(int num)
-{
-    int cont;
 
-    for (int f= 1; f <= num; f++)
-    {
-        if (f <= (num / 2) + 1)
-        {
-            cont = f - 1;
-        }
-        else
-        {
-            cont = (num - f) + 2;
-        }
-        for (int c = 1; c <= num; c++)
-        {
-            if (f != 1 && f <= (num / 2) + 1 && c != 1 && c <= f)
-            {
-                cont--;
-            }
-            else
-            {
-                if (f<= (num / 2) + 1)
-                {
-                    cont++;
-                }
-                else
-                {
-                    if (c <= (num - f) + 1)
-                    {
-                        cont--;
-                    }
-                    else
-                    {
-                        cont++;
-                    }
-                }
-            }
-            cout << cont << "\t";
-        }
-        cout << endl;
-    }
-}
+
 
 int main()
 {

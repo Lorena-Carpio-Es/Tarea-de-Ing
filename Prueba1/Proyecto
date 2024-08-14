@@ -11,38 +11,38 @@ bool EsNumeroPerfecto(int numero)
     {
         if (numero % i == 0)
         {
-            suma = i + 1;
+            sum = i + 1;
         }
    }
-    return suma == numero;
+    return sum == numero;
 }
 
-int SumarElementos(int vec[],int tam)
-{
-    int suma=0;
+int SumarLosElementos(int vec[],int tam)
+
+    int sum=0;
     for (int i = 0; i < tam; i++)
     {
-        suma = vec[i] + suma;
+        sum = vec[i] + suma;
     }
-    return suma;
+    return sum;
 }
 
 float PromedioElementos(int arr[], int tam)
 {
-    int Prom=0;
+    int Promedio=0;
     for (int i = 0; i < tam; i++)
     {
-        Prom = arr[i]+Prom;
+        Promedio = arr[i]+Prom;
 
     }
-    return Prom/tam;
+    return Promedio/tam;
 }
 
-void InvertirVectorNumeros(int vec[], int tam, int vecEnterosInvert[])
+void InvertirVectorNumeros(int vec[], int tam, int vecEnterosInvertir[])
 {
     for (int i = 0; i < tam; i++)
     {
-        vecEnterosInvert[i] = vec[tam - 1 - i];
+        vecEnterosInvertir[i] = vec[tam - 1 - i];
     }
 }
 
